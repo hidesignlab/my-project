@@ -4,9 +4,9 @@ const messages = [
     "Bienvenue",    // French
     "Willkommen",   // German
     "Benvenuto",    // Italian
-    "أهلاً وسهلاً",  // Arabic
-    "환영합니다",      // Korean
-    "欢迎",          // Chinese
+//    "أهلاً وسهلاً",  // Arabic
+  //  "환영합니다",      // Korean
+//    "欢迎",          // Chinese
 ];
 
 let index = 0;
