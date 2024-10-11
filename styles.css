@@ -33,9 +33,9 @@ h1 {
 
 .continue-button {
     font-size: 2rem;
-    color: #8c1837;
-    background-color: #efecdb;
-    border: 2px solid #8c1837;
+    color: #efecdb;
+    background-color: #8c1837;
+    border: 0px solid #8c1837;
     padding: 20px;
     border-radius: 50px;
     font-family: 'Inter', sans-serif;
