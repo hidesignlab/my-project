@@ -25,34 +25,26 @@ h1 {
 
 .continue-button {
     font-size: 2rem;
-    color: transparent; /* Make the text transparent */
-    background-image: linear-gradient(90deg, #8c1837 25%, #efecdb 50%, #8c1837 75%);
-    background-clip: text; /* Clip the background to the text */
-    -webkit-background-clip: text; /* For Safari */
-    animation: shine 2s infinite; /* Apply shine animation */
+    color: #8c1837;
+    background-color: #efecdb;
+    border: 2px solid #8c1837;
     padding: 20px;
     border-radius: 50px;
-    border: 2px solid #8c1837;
-    cursor: pointer;
-    position: relative;
-    margin-top: 80px; /* Space between the welcome message and the button */
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
     letter-spacing: -1px;
+    cursor: pointer;
+    margin-top: 80px; /* Adds space between the message and the button */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-@keyframes shine {
-    0% {
-        background-position: -100%; /* Start position */
-    }
-    100% {
-        background-position: 100%; /* End position */
-    }
-}
-
 @media (max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
     .continue-button {
         font-size: 1.5rem;
         padding: 15px; /* Adjusted padding for better fit on small screens */
-        margin-top: 80px; /* Keep the same margin on mobile */
+        margin-top: 80px; /* Adjusted space for smaller screens */
     }
 }
