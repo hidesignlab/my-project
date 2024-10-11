@@ -14,10 +14,10 @@ body {
 
 h1 {
     font-size: 4rem;
-    font-weight: 700; /* You can change this to 300, 600, or 700 as needed */
+    font-weight: 600; /* You can change this to 300, 600, or 700 as needed */
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    letter-spacing: -0.8px; /* Tighter letter spacing */
+    letter-spacing: -5px; /* Tighter letter spacing */
 }
 
 @media (max-width: 600px) {
