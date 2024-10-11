@@ -5,6 +5,10 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #efecdb;
+    background-image: url('images/BG-pattern_transp.png'); /* Set your pattern PNG */
+    background-size: cover; /* Adjust size (can use 'contain' or specific dimensions too) */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-position: center; /* Center the background image */
     font-family: 'Inter', sans-serif;
 }
 
