@@ -43,8 +43,8 @@ h1 {
         font-size: 3rem;
     }
     .continue-button {
-        font-size: 1.2rem;
-        padding: 8px 12px; /* Adjusted padding for better fit on small screens */
+        font-size: 1.4rem;
+        padding: 8px 15px; /* Adjusted padding for better fit on small screens */
         margin-top: 80px; /* Adjusted space for smaller screens */
     }
 }
