@@ -54,7 +54,7 @@ h1 {
     .continue-button {
         font-family: 'Inter', sans-serif;
         font-size: 1.4rem;
-        padding: 8px 15px; /* Adjusted padding for better fit on small screens */
+        padding: 10px 20px; /* Adjusted padding for better fit on small screens */
         margin-top: 80px; /* Adjusted space for smaller screens */
     }
 }
