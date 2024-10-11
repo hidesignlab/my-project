@@ -10,6 +10,7 @@ body {
 
 .container {
     text-align: center;
+    position: relative;
 }
 
 h1 {
@@ -28,7 +29,7 @@ h1 {
     background-color: #efecdb;
     border: 2px solid #8c1837;
     padding: 20px;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 50px; /* Rounded corners */
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     letter-spacing: -1px;
@@ -42,6 +43,10 @@ h1 {
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+    .continue-button {
+        font-size: 1.5rem;
+        padding: 30px; /* Smaller padding to fit better on small screens */
     }
 }
