@@ -34,10 +34,7 @@ h1 {
     font-weight: 600;
     letter-spacing: -1px;
     cursor: pointer;
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 20px; /* Adds space between the message and the button */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -48,5 +45,6 @@ h1 {
     .continue-button {
         font-size: 1.5rem;
         padding: 15px; /* Adjusted padding for better fit on small screens */
+        margin-top: 15px; /* Adjusted space for smaller screens */
     }
 }
