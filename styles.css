@@ -17,7 +17,7 @@ h1 {
     font-weight: 600; /* You can change this to 300, 600, or 700 as needed */
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    letter-spacing: -25px; /* Tighter letter spacing */
+    letter-spacing: -10px; /* Tighter letter spacing */
 }
 
 @media (max-width: 600px) {
