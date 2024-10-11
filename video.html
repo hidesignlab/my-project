@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #efecdb;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .video-container {
+            width: 80%;
+            max-width: 800px; /* Set maximum width for the video container */
+            background-color: #fff; /* Optional background for the container */
+            padding: 20px; /* Optional padding */
+            border-radius: 10px; /* Optional rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        }
+
+        video {
+            width: 100%; /* Make the video responsive */
+            border-radius: 10px; /* Optional rounded corners for the video */
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video controls>
+            <source src="path/to/your/video.mp4" type="video/mp4"> <!-- Replace with your video path -->
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>
