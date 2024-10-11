@@ -17,6 +17,10 @@ body {
     position: relative;
 }
 
+.welcome-message {
+    font-family: 'Noto Sans', sans-serif; /* For translations */
+}
+    
 h1 {
     font-family: 'Inter', sans-serif;
     font-size: 4rem;
