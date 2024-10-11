@@ -5,7 +5,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .container {
@@ -14,8 +14,10 @@ body {
 
 h1 {
     font-size: 3rem;
+    font-weight: 400; /* You can change this to 300, 600, or 700 as needed */
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    letter-spacing: -0.8px; /* Tighter letter spacing */
 }
 
 @media (max-width: 600px) {
