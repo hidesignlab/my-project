@@ -13,12 +13,31 @@ body {
 }
 
 h1 {
+    font-family: 'Inter', sans-serif;
     font-size: 4rem;
     color: #8c1837;
     font-weight: 600; /* You can change this to 300, 600, or 700 as needed */
     opacity: 0;
     transition: opacity 1s ease-in-out;
     letter-spacing: -1px; /* Tighter letter spacing */
+}
+
+.continue-button {
+    font-size: 2rem;
+    color: #8c1837;
+    background-color: #efecdb;
+    border: 2px solid #8c1837;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: -1px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @media (max-width: 600px) {
