@@ -17,10 +17,10 @@ h1 {
     font-family: 'Inter', sans-serif;
     font-size: 4rem;
     color: #8c1837;
-    font-weight: 600; /* You can change this to 300, 600, or 700 as needed */
+    font-weight: 600;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    letter-spacing: -1px; /* Tighter letter spacing */
+    letter-spacing: -1px;
 }
 
 .continue-button {
@@ -29,7 +29,7 @@ h1 {
     background-color: #efecdb;
     border: 2px solid #8c1837;
     padding: 20px;
-    border-radius: 50px; /* Rounded corners */
+    border-radius: 50px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     letter-spacing: -1px;
@@ -47,6 +47,6 @@ h1 {
     }
     .continue-button {
         font-size: 1.5rem;
-        padding: 30px; /* Smaller padding to fit better on small screens */
+        padding: 15px; /* Adjusted padding for better fit on small screens */
     }
 }
