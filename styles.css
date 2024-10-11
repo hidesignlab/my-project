@@ -34,7 +34,7 @@ h1 {
     font-weight: 600;
     letter-spacing: -1px;
     cursor: pointer;
-    margin-top: 40px; /* Adds space between the message and the button */
+    margin-top: 80px; /* Adds space between the message and the button */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
