@@ -45,6 +45,6 @@ h1 {
     .continue-button {
         font-size: 1.5rem;
         padding: 15px; /* Adjusted padding for better fit on small screens */
-        margin-top: 15px; /* Adjusted space for smaller screens */
+        margin-top: 80px; /* Adjusted space for smaller screens */
     }
 }
