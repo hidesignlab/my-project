@@ -15,34 +15,35 @@
             height: 100vh;
             margin: 0;
             background-color: #efecdb;
-            background-image: url('images/BG_pattern_transp_3.png'); /* Set your pattern PNG */
-            background-size: cover; /* Adjust size (can use 'contain' or specific dimensions too) */
-            background-repeat: no-repeat; /* Prevent repeating */
-            background-position: center; /* Center the background image */
+            background-image: url('images/BG_pattern_transp_3.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             font-family: 'Inter', sans-serif;
         }
 
         .video-container {
             width: 80%;
-            max-width: 800px; /* Set maximum width for the video container */
-            background-color: #fff; /* Optional background for the container */
-            padding: 20px; /* Optional padding */
-            border-radius: 10px; /* Optional rounded corners */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
-            margin-bottom: 80px; /* 80px space below the video */
-
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 80px;
         }
 
-        video {
-            width: 100%; /* Make the video responsive */
-            border-radius: 10px; /* Optional rounded corners for the video */
+        iframe {
+            width: 100%;
+            height: 450px; /* Adjust the height as needed */
+            border-radius: 10px;
+            border: none;
         }
 
         .register-button {
             font-size: 1.2rem;
             color: #efecdb;
             background-color: #8c1837;
-            border: 0px solid #8c1837;
+            border: 0;
             padding: 15px;
             border-radius: 30px;
             font-family: 'Inter', sans-serif;
@@ -51,7 +52,7 @@
             cursor: pointer;
             text-align: center;
             transition: background-color 0.3s ease, color 0.3s ease;
-            text-decoration: none; /* Remove underline if using <a> */
+            text-decoration: none;
         }
 
         .register-button:hover {
@@ -62,13 +63,9 @@
 </head>
 <body>
     <div class="video-container">
-        <video controls>
         <iframe src="https://www.youtube.com/embed/70WIZNnJMd4?si=v1_Yb7NsFIS3a4mc" allowfullscreen></iframe>
-            Your browser does not support the video tag.
-        </video>
     </div>
 
     <a href="https://docs.google.com/forms/d/18on4mfuCsX95LSZ77MeK09Y--sRXJO_bL0ixg2Nh6jg/viewform" class="register-button">Register!</a>
-
 </body>
 </html>
