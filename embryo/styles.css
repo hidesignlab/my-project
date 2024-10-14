@@ -21,9 +21,13 @@ body, html {
 #layer2 {
     background-image: url('Embryo_parallax_MG.png');
     z-index: 2;
+    transform: scale(0.3); /* 30% of original size */
+    transform-origin: center; /* Center the scaling effect */
 }
 
 #layer3 {
     background-image: url('Embryo_parallax_FG.png');
     z-index: 3;
+    transform: scale(0.3); /* 30% of original size */
+    transform-origin: center; /* Center the scaling effect */
 }
