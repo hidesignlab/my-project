@@ -14,7 +14,7 @@ body, html {
 }
 
 #layer1 {
-    background-image: url('Embryo_parallax_BG.jpg');
+    background-image: url('Embryo_parallax-BG.jpg');
     z-index: 1;
 }
 
@@ -24,6 +24,6 @@ body, html {
 }
 
 #layer3 {
-    background-image: url('Embryo_parallax_FG.jpg');
+    background-image: url('Embryo_parallax_FG.png');
     z-index: 3;
 }
