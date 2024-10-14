@@ -20,7 +20,7 @@ body {
 
 .text-overlay {
     position: absolute;
-    top: 20px; /* Position it at the top */
+    top: 10vh; /* Position it at the top */
     left: 50%;
     transform: translateX(-50%); /* Center align */
     font-weight: 600; /* Font weight */
@@ -32,10 +32,10 @@ body {
 
 .below-text-image {
     position: absolute;
-    top: 100px; /* Adjust as needed to position below the text */
+    top: 20vh; /* Adjust as needed to position below the text */
     left: 50%;
     transform: translateX(-50%); /* Center align */
-    width: 30vw; /* Responsive width */
+    width: 45vw; /* Responsive width */
     height: auto; /* Maintain aspect ratio */
     z-index: 2; /* Above the background */
 }
@@ -50,7 +50,7 @@ body {
     padding: 15px; /* Padding */
     font-size: 16px; /* Font size */
     font-weight: 400; /* Font weight */
-    letter-spacing: -0.5px; /* Letter spacing */
+    letter-spacing: 0px; /* Letter spacing */
     border-radius: 25px; /* Corner radius */
     background-color: #1f2539; /* Background color of dropdown */
     color: #aab8ea; /* Text color */
