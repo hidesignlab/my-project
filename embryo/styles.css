@@ -40,21 +40,33 @@ body {
     z-index: 2; /* Above the background */
 }
 
+/* Customized dropdown menu styles */
 .language-dropdown {
     position: absolute;
-    top: 250px; /* Adjust position as needed */
+    top: 50vh; /* Adjust position as needed */
     left: 50%;
     transform: translateX(-50%); /* Center align */
     z-index: 2; /* Above the background */
-    padding: 10px; /* Add padding */
-    font-size: 1rem; /* Font size */
+    padding: 15px; /* Padding */
+    font-size: 16px; /* Font size */
+    font-weight: 400; /* Font weight */
+    letter-spacing: -0.5px; /* Letter spacing */
+    border-radius: 25px; /* Corner radius */
+    background-color: #1f2539; /* Background color of dropdown */
+    color: #aab8ea; /* Text color */
+    border: none; /* Remove default border */
+    appearance: none; /* Remove default styling */
+    cursor: pointer; /* Change cursor to pointer */
 }
 
+/* Audio player styles */
 .audio-player {
     position: absolute;
-    top: 300px; /* Adjust position as needed */
+    top: 60vh; /* Adjust position as needed */
     left: 50%;
     transform: translateX(-50%); /* Center align */
     z-index: 2; /* Above the background */
     width: 80%; /* Responsive width */
+    background-color: #1f2539; /* Change the color of the audio player */
+    color: #aab8ea; /* Change the color of the audio player's text */
 }
