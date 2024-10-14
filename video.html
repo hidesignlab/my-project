@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Video!</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #efecdb;
+            background-image: url('images/BG_pattern_transp_3.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .video-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 80px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px; /* Adjust the height as needed */
+            border-radius: 10px;
+            border: none;
+        }
+    </style>
+    <script>
+        function loadVideo() {
+            // Get the URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const language = urlParams.get('lang');
+
+            // Define video URLs for each language
+            const videos = {
+                english: 'https://www.youtube.com/embed/70WIZNnJMd4?rel=0&modestbranding=1&showinfo=0&si=v1_Yb7NsFIS3a4mc',
+                spanish: 'https://www.youtube.com/embed/YOUR_SPANISH_VIDEO_ID?rel=0&modestbranding=1&showinfo=0', // Replace with actual Spanish video ID
+                french: 'https://www.youtube.com/embed/YOUR_FRENCH_VIDEO_ID?rel=0&modestbranding=1&showinfo=0'  // Replace with actual French video ID
+            };
+
+            // Set the video source based on the selected language
+            const iframe = document.getElementById('welcomeVideo');
+            if (language in videos) {
+                iframe.src = videos[language];
+            } else {
+                // Default to English if no valid language is found
+                iframe.src = videos.english;
+            }
+        }
+    </script>
+</head>
+<body onload="loadVideo()">
+    <div class="video-container">
+        <iframe id="welcomeVideo" src="" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
