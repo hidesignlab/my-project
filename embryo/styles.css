@@ -23,7 +23,7 @@ body {
     z-index: 2;
     transform: scale(0.3); /* 30% of original size */
     transform-origin: center; /* Center the scaling effect */
-    animation: circularMotion2 12s infinite linear; /* Circular motion for layer 2 */
+    animation: moveLayer2 20s infinite linear; /* Animation for layer 2 */
 }
 
 #layer3 {
@@ -31,25 +31,25 @@ body {
     z-index: 3;
     transform: scale(0.3); /* 30% of original size */
     transform-origin: center; /* Center the scaling effect */
-    animation: circularMotion3 14s infinite linear; /* Circular motion for layer 3 */
+    animation: moveLayer3 20s infinite linear; /* Animation for layer 3 */
 }
 
 /* Keyframe animations for automatic movement */
-@keyframes circularMotion2 {
-    0% {
-        transform: translate(0, 0) rotate(0deg);
+@keyframes moveLayer2 {
+    from {
+        transform: translateY(0);
     }
-    100% {
-        transform: translate(40px, 0) rotate(360deg); /* Adjust radius as needed */
+    to {
+        transform: translateY(30px); /* Adjust as needed */
     }
 }
 
-@keyframes circularMotion3 {
-    0% {
-        transform: translate(0, 0) rotate(0deg);
+@keyframes moveLayer3 {
+    from {
+        transform: translateY(0);
     }
-    100% {
-        transform: translate(30px, 0) rotate(360deg); /* Adjust radius as needed */
+    to {
+        transform: translateY(10px); /* Adjust as needed */
     }
 }
 
