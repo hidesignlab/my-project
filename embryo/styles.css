@@ -15,6 +15,7 @@ body {
 #layer1 {
     background-image: url('Embryo_parallax-BG.jpg');
     z-index: 1;
+    animation: moveLayer1 20s infinite linear; /* Animation for layer 1 */
 }
 
 #layer2 {
@@ -22,6 +23,7 @@ body {
     z-index: 2;
     transform: scale(0.3); /* 30% of original size */
     transform-origin: center; /* Center the scaling effect */
+    animation: moveLayer2 20s infinite linear; /* Animation for layer 2 */
 }
 
 #layer3 {
@@ -29,12 +31,41 @@ body {
     z-index: 3;
     transform: scale(0.3); /* 30% of original size */
     transform-origin: center; /* Center the scaling effect */
+    animation: moveLayer3 20s infinite linear; /* Animation for layer 3 */
+}
+
+/* Keyframe animations for automatic movement */
+@keyframes moveLayer1 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(50px); /* Adjust as needed */
+    }
+}
+
+@keyframes moveLayer2 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(30px); /* Adjust as needed */
+    }
+}
+
+@keyframes moveLayer3 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(10px); /* Adjust as needed */
+    }
 }
 
 /* Styles for the text overlay */
 .text-overlay {
     position: absolute;
-    top: 20px; /* Position it at the top */
+    top: 50px; /* Position it at the top */
     left: 50%;
     transform: translateX(-50%); /* Center align */
     font-family: 'Inter', sans-serif; /* Use the Inter font */
