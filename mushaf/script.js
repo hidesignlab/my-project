@@ -1,31 +1,22 @@
-// Get references to the dropdown and audio player
-const languageSelect = document.getElementById('languageSelect');
-const audioPlayer = document.getElementById('audioPlayer');
-const audioSource = document.getElementById('audioSource');
+document.getElementById('languageSelect').addEventListener('change', function() {
+    const videoPlayer = document.getElementById('videoPlayer');
+    const videoSource = document.getElementById('videoSource');
+    const selectedLanguage = this.value;
 
-// Function to handle language selection
-languageSelect.addEventListener('change', function() {
-    let selectedLanguage = languageSelect.value;
-    
-    // Set audio source based on selected language
-    switch (selectedLanguage) {
-        case 'english':
-            audioSource.src = 'https://ayrexdigital.com/Embryo_English.mp3'; // Path to English audio file
-            break;
-        case 'spanish':
-            audioSource.src = 'https://ayrexdigital.com/Embryo_Spanish.mp3'; // Path to Spanish audio file
-            break;
-        case 'french':
-            audioSource.src = 'https://ayrexdigital.com/Embryo_French.mp3'; // Path to French audio file
-            break;
-        default:
-            audioSource.src = ''; // No audio source
-            break;
-    }
-    
-    // Load the new audio source and play
-    audioPlayer.load();
-    if (selectedLanguage) {
-        audioPlayer.play(); // Automatically play the audio if a language is selected
+    // Define video URLs for each language
+    const videos = {
+        english: 'https://www.youtube.com/embed/kNI-C3lkV5o?si=kkLNAW-GeJnYLcu0',
+        spanish: 'https://www.youtube.com/embed/4j_GUvBh3nk?si=QAGItiFbkmGc2okg',
+        french: 'https://www.youtube.com/embed/IxzequyjrLA?si=Nk_NThmjwG5Iw9OX'
+    };
+
+    // Update the video source based on the selected language
+    if (videos[selectedLanguage]) {
+        videoSource.src = videos[selectedLanguage];
+        videoPlayer.load(); // Reload the video source
+        videoPlayer.play(); // Play the video automatically
+    } else {
+        videoSource.src = '';
+        videoPlayer.pause(); // Pause the video if no language is selected
     }
 });
