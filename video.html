@@ -39,33 +39,39 @@
             border: none;
         }
     </style>
-    <script>
-        function loadVideo() {
-            // Get the URL parameters
-            const urlParams = new URLSearchParams(window.location.search);
-            const language = urlParams.get('lang');
-
-            // Define video URLs for each language
-            const videos = {
-                english: 'https://www.youtube.com/embed/70WIZNnJMd4?rel=0&modestbranding=1&showinfo=0&si=v1_Yb7NsFIS3a4mc',
-                spanish: 'https://www.youtube.com/embed/YOUR_SPANISH_VIDEO_ID?rel=0&modestbranding=1&showinfo=0', // Replace with actual Spanish video ID
-                french: 'https://www.youtube.com/embed/YOUR_FRENCH_VIDEO_ID?rel=0&modestbranding=1&showinfo=0'  // Replace with actual French video ID
-            };
-
-            // Set the video source based on the selected language
-            const iframe = document.getElementById('welcomeVideo');
-            if (language in videos) {
-                iframe.src = videos[language];
-            } else {
-                // Default to English if no valid language is found
-                iframe.src = videos.english;
-            }
-        }
-    </script>
 </head>
-<body onload="loadVideo()">
+<body>
     <div class="video-container">
-        <iframe id="welcomeVideo" src="" allowfullscreen></iframe>
+        <iframe id="video-frame" allowfullscreen></iframe>
     </div>
+
+    <script>
+        // Function to get the URL parameter
+        function getUrlParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Determine which video to display based on the language parameter
+        const language = getUrlParameter('lang');
+        let videoUrl;
+
+        switch (language) {
+            case 'english':
+                videoUrl = "https://www.youtube.com/embed/70WIZNnJMd4?rel=0&modestbranding=1&showinfo=0&si=v1_Yb7NsFIS3a4mc"; // English video
+                break;
+            case 'spanish':
+                videoUrl = "https://www.youtube.com/embed/YOUR_SPANISH_VIDEO_ID"; // Replace with actual Spanish video ID
+                break;
+            case 'french':
+                videoUrl = "https://www.youtube.com/embed/YOUR_FRENCH_VIDEO_ID"; // Replace with actual French video ID
+                break;
+            default:
+                videoUrl = "https://www.youtube.com/embed/70WIZNnJMd4?rel=0&modestbranding=1&showinfo=0&si=v1_Yb7NsFIS3a4mc"; // Default to English video
+        }
+
+        // Set the video URL in the iframe
+        document.getElementById('video-frame').src = videoUrl;
+    </script>
 </body>
 </html>
