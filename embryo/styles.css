@@ -39,3 +39,22 @@ body {
     height: auto; /* Maintain aspect ratio */
     z-index: 2; /* Above the background */
 }
+
+.language-dropdown {
+    position: absolute;
+    top: 250px; /* Adjust position as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center align */
+    z-index: 2; /* Above the background */
+    padding: 10px; /* Add padding */
+    font-size: 1rem; /* Font size */
+}
+
+.audio-player {
+    position: absolute;
+    top: 300px; /* Adjust position as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center align */
+    z-index: 2; /* Above the background */
+    width: 80%; /* Responsive width */
+}
