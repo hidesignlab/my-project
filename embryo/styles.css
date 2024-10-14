@@ -30,3 +30,18 @@ body {
     transform: scale(0.3); /* 30% of original size */
     transform-origin: center; /* Center the scaling effect */
 }
+
+/* Styles for the text overlay */
+.text-overlay {
+    position: absolute;
+    top: 20px; /* Position it at the top */
+    left: 50%;
+    transform: translateX(-50%); /* Center align */
+    font-family: 'Inter', sans-serif; /* Use the Inter font */
+    font-weight: 600; /* Font weight */
+    font-size: 2rem; /* Font size */
+    color: white; /* Text color */
+    z-index: 4; /* Ensure it's above the layers */
+    text-align: center; /* Center text */
+    letter-spacing: -0.5px; /* Letter spacing */
+}
