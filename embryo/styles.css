@@ -19,17 +19,17 @@ body {
 }
 
 #layer2 {
-    background-image: url('Embryo_parallax_MG.png');
+    background-image: url('Embryo_parallax_MG_small.png');
     z-index: 2;
-    transform: scale(0.3); /* 30% of original size */
+    transform: scale(1); /* 30% of original size */
     transform-origin: center; /* Center the scaling effect */
     animation: moveLayer2 20s infinite linear; /* Animation for layer 2 */
 }
 
 #layer3 {
-    background-image: url('Embryo_parallax_FG.png');
+    background-image: url('Embryo_parallax_FG_small.png');
     z-index: 3;
-    transform: scale(0.3); /* 30% of original size */
+    transform: scale(1); /* 30% of original size */
     transform-origin: center; /* Center the scaling effect */
     animation: moveLayer3 20s infinite linear; /* Animation for layer 3 */
 }
