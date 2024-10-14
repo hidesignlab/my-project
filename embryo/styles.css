@@ -15,7 +15,7 @@ body {
 #layer1 {
     background-image: url('Embryo_parallax-BG.jpg');
     z-index: 1;
-    animation: moveLayer1 20s infinite linear; /* Animation for layer 1 */
+    /* animation: moveLayer1 20s infinite linear; */ /* Animation for layer 1 */
 }
 
 #layer2 {
@@ -23,7 +23,7 @@ body {
     z-index: 2;
     transform: scale(0.3); /* 30% of original size */
     transform-origin: center; /* Center the scaling effect */
-    animation: moveLayer2 20s infinite linear; /* Animation for layer 2 */
+    animation: circularMotion2 12s infinite linear; /* Circular motion for layer 2 */
 }
 
 #layer3 {
@@ -31,34 +31,25 @@ body {
     z-index: 3;
     transform: scale(0.3); /* 30% of original size */
     transform-origin: center; /* Center the scaling effect */
-    animation: moveLayer3 20s infinite linear; /* Animation for layer 3 */
+    animation: circularMotion3 14s infinite linear; /* Circular motion for layer 3 */
 }
 
 /* Keyframe animations for automatic movement */
-@keyframes moveLayer1 {
-    from {
-        transform: translateY(0);
+@keyframes circularMotion2 {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
     }
-    to {
-        transform: translateY(0px); /* Adjust as needed */
-    }
-}
-
-@keyframes moveLayer2 {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(50px); /* Adjust as needed */
+    100% {
+        transform: translate(40px, 0) rotate(360deg); /* Adjust radius as needed */
     }
 }
 
-@keyframes moveLayer3 {
-    from {
-        transform: translateY(0);
+@keyframes circularMotion3 {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
     }
-    to {
-        transform: translateY(75px); /* Adjust as needed */
+    100% {
+        transform: translate(30px, 0) rotate(360deg); /* Adjust radius as needed */
     }
 }
 
