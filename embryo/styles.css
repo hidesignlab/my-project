@@ -43,7 +43,7 @@ body {
 /* Customized dropdown menu styles */
 .language-dropdown {
     position: absolute;
-    top: 50vh; /* Adjust position as needed */
+    top: 60vh; /* Adjust position as needed */
     left: 50%;
     transform: translateX(-50%); /* Center align */
     z-index: 2; /* Above the background */
@@ -62,7 +62,7 @@ body {
 /* Audio player styles */
 .audio-player {
     position: absolute;
-    top: 60vh; /* Adjust position as needed */
+    top: 70vh; /* Adjust position as needed */
     left: 50%;
     transform: translateX(-50%); /* Center align */
     z-index: 2; /* Above the background */
