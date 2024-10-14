@@ -33,10 +33,10 @@ body {
 
 .below-text-image {
     position: absolute;
-    top: 20vh; /* Adjust as needed to position below the text */
+    top: 15vh; /* Adjust as needed to position below the text */
     left: 50%;
     transform: translateX(-50%); /* Center align */
-    width: 50vw; /* Responsive width */
+    width: 30vw; /* Responsive width */
     height: auto; /* Maintain aspect ratio */
     z-index: 2; /* Above the background */
 }
