@@ -1,82 +1,41 @@
 body {
     margin: 0;
-    height: 200vh; /* Increase the body height to allow scrolling */
-    overflow: hidden; /* Prevents default scroll bar */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrollbars */
+    position: relative; /* Establish a positioning context */
+    font-family: 'Inter', sans-serif; /* Set the font */
 }
 
-.layer {
+#background {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    transition: transform 0.1s; /* Smooth transition */
+    background-image: url('Embryo_parallax-BG.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    z-index: 1; /* Ensure it stays behind other content */
 }
 
-#layer1 {
-    background-image: url('Embryo_parallax-BG.jpg');
-    z-index: 1;
-    /* animation: moveLayer1 20s infinite linear; */ /* Animation for layer 1 */
-}
-
-#layer2 {
-    z-index: 2;
-    width: 30vw; /* Set width to 30% of viewport*/
-    height: auto; /* Maintain aspect ratio */
-    transform: scale(0.3); /* Scale down */
-    transform-origin: center; /* Scale from center */
-    top: calc(50% - 15%); /* Center vertically */
-    left: 50%; /* Center horizontally */
-    margin-left: -15vw; /* Adjust for half the width of the scaled layer */
-    animation: moveLayer2 20s infinite linear; /* Animation for layer 2 */
-    background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red for visibility */
-
-}
-
-#layer3 {
-    background-image: url('Embryo_parallax_FG_small.png');
-    z-index: 3;
-    width: 30vw; /* Set width to 30% of viewport*/
-    height: auto; /* Maintain aspect ratio */
-    transform: scale(0.3); /* Scale down */
-    transform-origin: center; /* Scale from center */
-    top: calc(50% - 15%); /* Center vertically */
-    left: 50%; /* Center horizontally */
-    margin-left: -15vw; /* Adjust for half the width of the scaled layer */
-    animation: moveLayer3 20s infinite linear; /* Animation for layer 3 */
-    background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red for visibility */
-
-}
-
-/* Keyframe animations for automatic movement */
-@keyframes moveLayer2 {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(30px); /* Adjust as needed */
-    }
-}
-
-@keyframes moveLayer3 {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(10px); /* Adjust as needed */
-    }
-}
-
-/* Styles for the text overlay */
 .text-overlay {
     position: absolute;
-    top: 50px; /* Position it at the top */
+    top: 20px; /* Position it at the top */
     left: 50%;
     transform: translateX(-50%); /* Center align */
-    font-family: 'Inter', sans-serif; /* Use the Inter font */
     font-weight: 600; /* Font weight */
     font-size: 2rem; /* Font size */
     color: white; /* Text color */
-    z-index: 4; /* Ensure it's above the layers */
+    z-index: 2; /* Above the background */
     text-align: center; /* Center text */
-    letter-spacing: -0.5px; /* Letter spacing */
+}
+
+.below-text-image {
+    position: absolute;
+    top: 100px; /* Adjust as needed to position below the text */
+    left: 50%;
+    transform: translateX(-50%); /* Center align */
+    width: 30vw; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2; /* Above the background */
 }
