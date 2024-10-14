@@ -20,28 +20,26 @@ body {
 
 #layer2 {
     z-index: 2;
-    width: 30%; /* Set width to 30% */
+    width: 30vw; /* Set width to 30% of viewport*/
     height: auto; /* Maintain aspect ratio */
     transform: scale(0.3); /* Scale down */
     transform-origin: center; /* Scale from center */
-    top: 50%; /* Position it in the middle vertically */
+    top: calc(50% - 15%); /* Center vertically */
     left: 50%; /* Center horizontally */
-    margin-top: -15%; /* Adjust for half the height of the scaled layer */
-    margin-left: -15%; /* Adjust for half the width of the scaled layer */
+    margin-left: -15vw; /* Adjust for half the width of the scaled layer */
     animation: moveLayer2 20s infinite linear; /* Animation for layer 2 */
 }
 
 #layer3 {
     background-image: url('Embryo_parallax_FG_small.png');
     z-index: 3;
-    width: 30%; /* Set width to 30% */
+    width: 30vw; /* Set width to 30% of viewport*/
     height: auto; /* Maintain aspect ratio */
     transform: scale(0.3); /* Scale down */
     transform-origin: center; /* Scale from center */
-    top: 50%; /* Position it in the middle vertically */
+    top: calc(50% - 15%); /* Center vertically */
     left: 50%; /* Center horizontally */
-    margin-top: -15%; /* Adjust for half the height of the scaled layer */
-    margin-left: -15%; /* Adjust for half the width of the scaled layer */
+    margin-left: -15vw; /* Adjust for half the width of the scaled layer */
     animation: moveLayer3 20s infinite linear; /* Animation for layer 3 */
 }
 
