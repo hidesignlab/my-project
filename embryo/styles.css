@@ -28,6 +28,8 @@ body {
     left: 50%; /* Center horizontally */
     margin-left: -15vw; /* Adjust for half the width of the scaled layer */
     animation: moveLayer2 20s infinite linear; /* Animation for layer 2 */
+    background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red for visibility */
+
 }
 
 #layer3 {
@@ -41,6 +43,8 @@ body {
     left: 50%; /* Center horizontally */
     margin-left: -15vw; /* Adjust for half the width of the scaled layer */
     animation: moveLayer3 20s infinite linear; /* Animation for layer 3 */
+    background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red for visibility */
+
 }
 
 /* Keyframe animations for automatic movement */
