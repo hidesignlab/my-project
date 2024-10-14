@@ -35,7 +35,7 @@ body {
     top: 20vh; /* Adjust as needed to position below the text */
     left: 50%;
     transform: translateX(-50%); /* Center align */
-    width: 45vw; /* Responsive width */
+    width: 65vw; /* Responsive width */
     height: auto; /* Maintain aspect ratio */
     z-index: 2; /* Above the background */
 }
@@ -43,7 +43,7 @@ body {
 /* Customized dropdown menu styles */
 .language-dropdown {
     position: absolute;
-    top: 60vh; /* Adjust position as needed */
+    top: 70vh; /* Adjust position as needed */
     left: 50%;
     transform: translateX(-50%); /* Center align */
     z-index: 2; /* Above the background */
@@ -57,12 +57,13 @@ body {
     border: none; /* Remove default border */
     appearance: none; /* Remove default styling */
     cursor: pointer; /* Change cursor to pointer */
+    text-align: center; /* Center align the text in the dropdown menu
 }
 
 /* Audio player styles */
 .audio-player {
     position: absolute;
-    top: 70vh; /* Adjust position as needed */
+    top: 80vh; /* Adjust position as needed */
     left: 50%;
     transform: translateX(-50%); /* Center align */
     z-index: 2; /* Above the background */
