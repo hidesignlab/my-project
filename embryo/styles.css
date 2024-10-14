@@ -1,16 +1,15 @@
-body, html {
+body {
     margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
+    height: 200vh; /* Increase the body height to allow scrolling */
+    overflow: hidden; /* Prevents default scroll bar */
 }
 
-.parallax-layer {
+.layer {
     position: absolute;
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center;
+    transition: transform 0.1s; /* Smooth transition */
 }
 
 #layer1 {
