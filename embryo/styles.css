@@ -24,7 +24,7 @@ body {
     left: 50%;
     transform: translateX(-50%); /* Center align */
     font-weight: 600; /* Font weight */
-    font-size: 2.2rem; /* Font size */
+    font-size: 2rem; /* Font size */
     letter-spacing: -0.5px; /* Letter spacing */
     color: white; /* Text color */
     z-index: 2; /* Above the background */
@@ -36,7 +36,7 @@ body {
     top: 20vh; /* Adjust as needed to position below the text */
     left: 50%;
     transform: translateX(-50%); /* Center align */
-    width: 55vw; /* Responsive width */
+    width: 50vw; /* Responsive width */
     height: auto; /* Maintain aspect ratio */
     z-index: 2; /* Above the background */
 }
@@ -44,7 +44,7 @@ body {
 /* Customized dropdown menu styles */
 .language-dropdown {
     position: absolute;
-    top: 65vh; /* Adjust position as needed */
+    top: 50vh; /* Adjust position as needed */
     left: 50%;
     transform: translateX(-50%); /* Center align */
     z-index: 2; /* Above the background */
@@ -64,7 +64,7 @@ body {
 /* Audio player styles */
 .audio-player {
     position: absolute;
-    top: 75vh; /* Adjust position as needed */
+    top: 65vh; /* Adjust position as needed */
     left: 50%;
     transform: translateX(-50%); /* Center align */
     z-index: 2; /* Above the background */
