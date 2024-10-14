@@ -33,7 +33,7 @@ body {
 
 .below-text-image {
     position: absolute;
-    top: 15vh; /* Adjust as needed to position below the text */
+    top: 20vh; /* Adjust as needed to position below the text */
     left: 50%;
     transform: translateX(-50%); /* Center align */
     width: 30vw; /* Responsive width */
@@ -61,10 +61,10 @@ body {
     text-align: center; /* Center align the text in the dropdown menu */
 }
 
-/* Audio player styles */
-.audio-player {
+
+.video-player {
     position: absolute;
-    top: 75vh; /* Adjust position as needed */
+    top: 35vh; /* Adjust position as needed */
     left: 50%;
     transform: translateX(-50%); /* Center align */
     z-index: 2; /* Above the background */
