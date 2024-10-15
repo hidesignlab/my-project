@@ -44,7 +44,7 @@ body {
 /* Customized dropdown menu styles */
 .language-dropdown {
     position: absolute;
-    top: 75vh; /* Adjust position as needed */
+    top: 55vh; /* Adjust position as needed */
     left: 50%;
     transform: translateX(-50%); /* Center align */
     z-index: 3; /* Above the background */
@@ -64,12 +64,12 @@ body {
 
 .video-player {
     position: absolute;
-    top: 20vh; /* Adjust position as needed */
+    top: 25vh; /* Adjust position as needed */
     left: 50%;
     transform: translateX(-50%); /* Center align */
     z-index: 3; /* Above the background */
     width: 80%; /* Responsive width */
-    height: 35vh; /* Video container height */
+    height: 30vh; /* Video container height */
     background-color: #1f2539; /* Change the color of the audio player */
     color: #aab8ea; /* Change the color of the audio player's text */
 }
