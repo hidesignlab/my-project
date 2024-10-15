@@ -44,10 +44,10 @@ body {
 /* Customized dropdown menu styles */
 .language-dropdown {
     position: absolute;
-    top: 65vh; /* Adjust position as needed */
+    top: 75vh; /* Adjust position as needed */
     left: 50%;
     transform: translateX(-50%); /* Center align */
-    z-index: 2; /* Above the background */
+    z-index: 3; /* Above the background */
     padding: 15px; /* Padding */
     font-size: 16px; /* Font size */
     font-weight: 400; /* Font weight */
