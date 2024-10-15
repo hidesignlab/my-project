@@ -69,7 +69,7 @@ body {
     transform: translateX(-50%); /* Center align */
     z-index: 2; /* Above the background */
     width: 80%; /* Responsive width */
-    height: 25vh; /* Video container height */
+    height: 35vh; /* Video container height */
     background-color: #1f2539; /* Change the color of the audio player */
     color: #aab8ea; /* Change the color of the audio player's text */
 }
