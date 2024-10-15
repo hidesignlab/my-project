@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet"> <!-- Import Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
     <title>Mushaf Othman</title>
 </head>
 <body>
     <div id="background" class="layer"></div>
     <div class="text-overlay">Mushaf Othman</div>
-    <img src="mushaf_cutout.png" alt="Description of image" class="below-text-image"> <!-- Image below the text -->
+    <img src="mushaf_cutout.png" alt="Description of image" class="below-text-image">
 
-<!-- Dropdown menu -->
+    <!-- Dropdown menu -->
     <select id="languageSelect" class="language-dropdown">
         <option value="">🔈 Select Language</option>
         <option value="english">English</option>
@@ -20,11 +20,8 @@
         <option value="french">Français</option>
     </select>
 
-    <!-- Video player container -->
-    <video id="videoPlayer" class="video-player" controls>
-        <source id="videoSource" src="" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <!-- Video player container using iframe -->
+    <iframe id="videoPlayer" class="video-player" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
     <script src="script.js"></script>
 </body>
