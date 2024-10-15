@@ -33,7 +33,7 @@ body {
 
 .below-text-image {
     position: absolute;
-    top: 20vh; /* Adjust as needed to position below the text */
+    top: 25vh; /* Adjust as needed to position below the text */
     left: 50%;
     transform: translateX(-50%); /* Center align */
     width: 60vw; /* Responsive width */
@@ -44,7 +44,7 @@ body {
 /* Customized dropdown menu styles */
 .language-dropdown {
     position: absolute;
-    top: 55vh; /* Adjust position as needed */
+    top: 65vh; /* Adjust position as needed */
     left: 50%;
     transform: translateX(-50%); /* Center align */
     z-index: 3; /* Above the background */
