@@ -36,7 +36,7 @@ body {
     top: 20vh; /* Adjust as needed to position below the text */
     left: 50%;
     transform: translateX(-50%); /* Center align */
-    width: 30vw; /* Responsive width */
+    width: 60vw; /* Responsive width */
     height: auto; /* Maintain aspect ratio */
     z-index: 2; /* Above the background */
 }
@@ -64,10 +64,10 @@ body {
 
 .video-player {
     position: absolute;
-    top: 35vh; /* Adjust position as needed */
+    top: 20vh; /* Adjust position as needed */
     left: 50%;
     transform: translateX(-50%); /* Center align */
-    z-index: 2; /* Above the background */
+    z-index: 3; /* Above the background */
     width: 80%; /* Responsive width */
     height: 35vh; /* Video container height */
     background-color: #1f2539; /* Change the color of the audio player */
