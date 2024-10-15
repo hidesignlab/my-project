@@ -31,7 +31,7 @@ body {
     text-align: center; /* Center text */
 }
 
-.below-text-image {
+.below-text-video {
     position: absolute;
     top: 20vh; /* Adjust as needed to position below the text */
     left: 50%;
@@ -39,7 +39,10 @@ body {
     width: 50vw; /* Responsive width */
     height: auto; /* Maintain aspect ratio */
     z-index: 2; /* Above the background */
+    object-fit: cover; /* Ensures the video scales correctly */
+    border-radius: 10px; /* Optional: Add rounded corners to the video */
 }
+
 
 /* Customized dropdown menu styles */
 .language-dropdown {
