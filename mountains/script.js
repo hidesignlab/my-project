@@ -10,13 +10,13 @@ languageSelect.addEventListener('change', function() {
     // Set audio source based on selected language
     switch (selectedLanguage) {
         case 'english':
-            audioSource.src = 'https://ayrexdigital.com/Embryo_English.mp3'; // Path to English audio file
+            audioSource.src = 'https://ayrexdigital.com/Mountains_English.mp3'; // Path to English audio file
             break;
         case 'spanish':
-            audioSource.src = 'https://ayrexdigital.com/Embryo_Spanish.mp3'; // Path to Spanish audio file
+            audioSource.src = 'https://ayrexdigital.com/Mountains_Spanish.mp3'; // Path to Spanish audio file
             break;
         case 'french':
-            audioSource.src = 'https://ayrexdigital.com/Embryo_French.mp3'; // Path to French audio file
+            audioSource.src = 'https://ayrexdigital.com/Mountains_French.mp3'; // Path to French audio file
             break;
         default:
             audioSource.src = ''; // No audio source
