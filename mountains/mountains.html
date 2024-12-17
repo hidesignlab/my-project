@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet"> <!-- Import Inter font -->
+    <title>The Mountains</title>
+    <link rel="icon" href="embryo/favicon.png" type="image/png">
+</head>
+<body>
+    <div id="background" class="layer"></div>
+    <div class="text-overlay">Roots of Mountains are like Pegs</div>
+    
+    <!-- Video below the text -->
+    <video src="Rakaposhi Video.mp4" class="below-text-video" autoplay muted loop playsinline>
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Dropdown menu -->
+    <select id="languageSelect" class="language-dropdown">
+        <option value="">🔈 Select Language</option>
+        <option value="english">English</option>
+        <option value="spanish">Español</option>
+        <option value="french">Français</option>
+    </select>
+
+    <!-- Audio player -->
+    <audio id="audioPlayer" controls class="audio-player">
+        <source id="audioSource" src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
